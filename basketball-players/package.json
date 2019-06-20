@@ -1,0 +1,34 @@
+{
+  "name": "store-inventory-app",
+  "version": "1.0.0",
+  "description": "Restful sample store inventory app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StoneJeremy/BlueDropExercise.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "express",
+    "restful",
+    "api"
+  ],
+  "author": "Jeremy Stone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StoneJeremy/BlueDropExercise/issues"
+  },
+  "homepage": "https://github.com/StoneJeremy/BlueDropExercise#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.5",
+    "mysql": "^2.17.1",
+    "req-flash": "0.0.3"
+  }
+}
