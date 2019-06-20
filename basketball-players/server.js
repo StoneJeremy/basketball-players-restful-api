@@ -1,7 +1,5 @@
 const express = require('express');
 
-
-
 const mysql = require('mysql');
 
 const PORT = process.env.PORT || 3000;
@@ -24,6 +22,7 @@ require('./routes/html-routes')(app, connection);
 app.listen(PORT, () => {
     console.log('App running on port' + PORT);
 });
+
 
 
 // const http = require('http');
