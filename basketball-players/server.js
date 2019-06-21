@@ -1,5 +1,5 @@
-const express = require('express');
 
+const express = require('express');
 const mysql = require('mysql');
 
 const PORT = process.env.PORT || 3000;
@@ -21,6 +21,9 @@ require('./routes/html-routes')(app, connection);
 /*Start the Server!*/
 app.listen(PORT, () => {
     console.log('App running on port' + PORT);
+});
+app.get('/express_backend', (req, res) => {
+    res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
 });
 
 

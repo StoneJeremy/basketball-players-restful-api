@@ -2,7 +2,7 @@ const mysql = require('mysql');
 module.exports = function(app,connection) {
 
 //Get data for all basketball players
-app.get('/players', function (req, res) {
+app.get('/', function (req, res) {
     connection.query('select * from basketball.players', function (error, results, fields) {
        if (error) throw error;
        res.end(JSON.stringify(results));
