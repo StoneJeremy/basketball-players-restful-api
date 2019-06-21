@@ -18,21 +18,15 @@ connection.connect(function(err){
 });
 
 require('./routes/html-routes')(app, connection);
-/*Start the Server!*/
+//Start the Server!
 app.listen(PORT, () => {
     console.log('App running on port' + PORT);
 });
 app.get('/express_backend', (req, res) => {
-    res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' });
+    res.send({ express: 'Successfully connected to react' });
 });
 
 
 
-// const http = require('http');
-// const app = require('./app');
-// const port = process.env.PORT || 8080;
 
-// const server = http.createServer();
-
-// server.listen(port);
 
